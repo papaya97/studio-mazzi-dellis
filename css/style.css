@@ -2984,10 +2984,30 @@ ul.list-group li {
         padding-bottom: 8px !important;
     }
     
+    /* Align mobile header icons and burger menu vertically */
+    .d-flex.justify-content-end {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: 15px !important;
+        height: 100% !important;
+    }
+    
+    .d-flex.justify-content-end > div {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+    
+    .navbar-toggler {
+        margin-top: 0 !important;
+        vertical-align: middle !important;
+    }
+    
     /* Set a minimum height for the hero banner at the top to prevent overlap */
     #site-header + section {
-        min-height: 280px !important;
-        height: 280px !important;
+        min-height: 320px !important;
+        height: 320px !important;
         position: relative;
         overflow: hidden;
     }
@@ -2995,15 +3015,19 @@ ul.list-group li {
         height: 100% !important;
         object-fit: cover !important;
     }
+    #site-header + section .position-absolute.start-0.bottom-0 {
+        bottom: 15px !important;
+    }
     #site-header + section .row.align-items-center {
-        margin-bottom: 1.5rem !important;
+        margin-bottom: 0px !important;
     }
     #site-header + section .main-title {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
     #site-header + section .fs-large {
-        font-size: 15px !important;
-        margin-top: 0.5rem !important;
+        font-size: 14px !important;
+        margin-top: 5px !important;
+        line-height: 1.3 !important;
     }
 }
 
