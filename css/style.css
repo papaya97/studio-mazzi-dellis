@@ -2970,6 +2970,53 @@ ul.list-group li {
     }
 }
 
+@media (max-width: 767px) {
+    /* Reduce initial header padding and logo height on mobile */
+    .header-top-bottom {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .page-header .site-logo img {
+        max-height: 80px !important;
+    }
+    .sticky-fixed {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    
+    /* Set a minimum height for the hero banner at the top to prevent overlap */
+    #site-header + section {
+        min-height: 280px !important;
+        height: 280px !important;
+        position: relative;
+        overflow: hidden;
+    }
+    #site-header + section picture img {
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    #site-header + section .row.align-items-center {
+        margin-bottom: 1.5rem !important;
+    }
+    #site-header + section .main-title {
+        font-size: 24px !important;
+    }
+    #site-header + section .fs-large {
+        font-size: 15px !important;
+        margin-top: 0.5rem !important;
+    }
+}
+
+.sticky-fixed .site-logo img {
+    max-height: 55px !important;
+}
+
+@media (min-width: 768px) {
+    .sticky-fixed .site-logo img {
+        max-height: 75px !important;
+    }
+}
+
 .sidebar-nav .dropdown-menu {
     position: static !important;
     float: none !important;
