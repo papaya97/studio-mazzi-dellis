@@ -824,6 +824,13 @@ hr {
 
 .sticky-fixed .site-logo img {
     mix-blend-mode: difference;
+    max-height: 55px !important;
+}
+
+@media (min-width: 768px) {
+    .sticky-fixed .site-logo img {
+        max-height: 75px !important;
+    }
 }
 
 .header-top-bottom {
@@ -2953,6 +2960,61 @@ ul.list-group li {
     }
     .finalist-logo {
         width: 85px;
+    }
+}
+
+/*== Mobile Viewport Optimization Overrides ==*/
+@media (max-width: 576px) {
+    .main-title, .page-title {
+        font-size: 28px !important;
+    }
+}
+
+.sidebar-nav .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    margin: 0 !important;
+    transform: none !important;
+    display: none;
+}
+
+.sidebar-nav .open > .dropdown-menu {
+    display: block !important;
+}
+
+.sidebar-nav .dropdown-menu .dropdown-item {
+    color: var(--secondary-color) !important;
+    font-size: 16px !important;
+    padding: 8px 10px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: transparent !important;
+}
+
+.sidebar-nav .dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-nav .dropdown-menu .dropdown-item:hover,
+.sidebar-nav .dropdown-menu .dropdown-item:focus {
+    color: var(--primary-color) !important;
+}
+
+.sidebar-nav .open .dropdown-toggle::after {
+    -webkit-transform: rotate(0) !important;
+    transform: rotate(0) !important;
+}
+
+@media (max-width: 767px) {
+    .form-control,
+    .form-select {
+        height: 44px !important;
+        font-size: 15px !important;
+        padding: 10px 15px !important;
     }
 }
 
